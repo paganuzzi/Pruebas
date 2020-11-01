@@ -12,7 +12,7 @@ func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		log.Println(r.Header)
-		io.WriteString(w, "Version 4.2.3 "+time.Now().String())
+		io.WriteString(w, "Version 4.2.4 "+time.Now().String())
 	})
 
 	http.HandleFunc("/down", func(w http.ResponseWriter, r *http.Request) {
