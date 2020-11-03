@@ -20,6 +20,6 @@ func main() {
 		os.Exit(1)
 	})
 
-	log.Println("Server Online en puerto 8000")
+	log.Println("Server Online en el puerto 8000")
 	http.ListenAndServe(":8000", nil)
 }
