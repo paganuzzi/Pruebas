@@ -1,3 +1,2 @@
-#README
-
-##Proyecto de Purebas
+# Readme
+## Proyecto de Pruebas
