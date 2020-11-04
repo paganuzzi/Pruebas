@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  build:
+  build-go:
     name: Build
     runs-on: ubuntu-latest
     steps:
@@ -31,3 +31,6 @@ jobs:
 
     - name: Build
       run: go build -v .
+
+    - name: Crea Imagen
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
